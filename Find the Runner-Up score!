@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr =list(map(int, input().split()))
+    h1=arr[0]
+    h2=-101
+    for i in range(n):
+        if (arr[i]>h1):
+             h2=h1
+             h1=arr[i]
+        elif(arr[i]>h2 and arr[i]!=h1):
+            h2=arr[i]
+    print(h2)
